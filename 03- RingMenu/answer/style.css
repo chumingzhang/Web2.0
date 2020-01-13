@@ -1,0 +1,252 @@
+/*
+	姓名：张楚明   学号：18342125
+	index.html网页的style.css的样式表
+*/
+
+/* hover类下面设置透明度为1,原本设置为透明度为0 */
+
+/*主体位置*/
+#at-plus-container {
+    position: absolute;
+    left: 37%;
+}
+
+#bottom-positioner {
+    width: 450px;
+    height: 650px;
+    overflow: hidden;
+}
+
+/*通知栏*/
+#info-bar {
+    position: absolute;
+    transition: all 0.5s;
+    background-color: #7E7E7E;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;  
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+    margin-bottom: 20px; 
+    overflow: hidden;
+}
+
+/*列表无前缀*/
+ul {
+    list-style-type: none;
+}
+
+/*大圆通知栏*/
+#button:hover #info-bar {
+    position: absolute;
+    background-color: #7E7E7E;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    left: 42%;
+    bottom: 15%;
+    opacity: 1;
+}
+
+/*user & comment 2人参与讨论+3条评论*/
+.page {
+    display: inline-block;
+    position: absolute;
+}
+.page span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0px;
+    color: white;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.user {
+    position: absolute;
+    top:12px;
+    left:38px;
+}
+
+.comment {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+#button:hover .user span {
+    margin-bottom: 8px;
+    font-size: 20px;
+    opacity: 1;
+}
+
+#button:hover .comment span {
+    font-size: 35px;
+    opacity: 1;
+}
+
+/*mine 我有6条评论+被赞6次*/
+.mine {
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+}
+
+.mine span {
+    position: absolute;
+    display: inline-block;
+    margin-left: 5px;
+    color: #26E79E;
+    bottom: 5px;
+}
+
+.posted {
+    left: 20px;
+}
+
+.like {
+    right:30px;
+}
+
+#button:hover .posted span {
+    opacity: 1;
+}
+
+#button:hover .like span {
+    opacity: 1;
+}
+
+
+
+/*四个小圆*/
+.button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 6px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*蒙板*/
+.mask {
+    background: url(assets/images/nomask.png) no-repeat 50% 50%;
+    background-color: #686868;
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+#button:hover .mask {
+    background: url(assets/images/nomask.png) no-repeat 50% 50%;
+    background-color: #686868;
+    left: 36%;
+    bottom: 15%;
+    opacity: 1;
+}
+
+/*历史记录*/
+.history {
+    background: url(assets/images/history.png) no-repeat 50% 50%;
+    background-color: #666666;
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+#button:hover .history {
+    background: url(assets/images/history.png) no-repeat 50% 50%;
+    background-color: #666666;
+    left: 34%;
+    bottom: 9%;
+    opacity: 1;
+}
+
+/*消息*/
+.message {
+    background: url(assets/images/message.png) no-repeat 50% 50%;
+    background-color: #666666;
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+#button:hover .message {
+    background: url(assets/images/message.png) no-repeat 50% 50%;
+    background-color: #666666;
+    left: 38%;
+    bottom: 3%;
+    opacity: 1;
+}
+
+/*未读*/
+.unread {
+    position: absolute;
+    left:60%;
+    bottom: 60%;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+/*设置*/
+.setting {
+    background: url(assets/images/setting.png) no-repeat 50% 50%;
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+#button:hover .setting {
+    background: url(assets/images/setting.png) no-repeat 50% 50%;
+    background-color: #686868;
+    left: 49%;
+    bottom: 0;
+    opacity: 1;
+}
+
+/*登录/注册*/
+.sign {
+    background: url(assets/images/signin.png) no-repeat 50% 50%;
+    background-color: #686868;
+    left: 50%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+#button:hover .sign {
+    background: url(assets/images/signin.png) no-repeat 50% 50%;
+    background-color: #686868;
+    left: 60%;
+    bottom: 1%;
+    opacity: 1;
+}
+
+
+/*the one*/
+.apb {
+    position: absolute;
+    background: url(assets/images/atplus_white.png) no-repeat 50% 50%;
+    background-color: #989FCF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    left:50%;
+    bottom: 9%;
+    opacity: 0.7;
+}
+
+#button:hover .apb{
+    background: url(assets/images/atplus_green.png) no-repeat 50% 50%;
+    background-color: #303F9F;
+    opacity: 1;
+    background-size: 70%;
+    transform: scale(1.4);
+    
+}

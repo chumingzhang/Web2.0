@@ -1,0 +1,163 @@
+/*
+	姓名：张楚明   学号：18342125
+	tmnt.html网页的move.css的样式表
+*/
+
+h1.title {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 24pt;
+}
+
+body.zero {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.banner {
+	text-align: center;
+	background-repeat: repeat-x;
+    height: 50px;
+    background-image: url(http://hcp.sysu.edu.cn/wiki/download/attachments/32833570/bannerbackground.png?version=1&modificationDate=1268939512000&api=v2);
+}
+
+.banner image {
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.low {
+	margin: 0 auto;
+	border: 4px solid gray;
+	width: 800px;
+}
+
+div.right {
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+}
+
+.right img {
+	display: block;
+	width: 100%;
+}
+
+dl.a {
+	padding: 10px;
+}
+
+.a dt {
+	padding-top: 1.5em;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 8pt;
+}
+
+.a dd {
+	font-family: sans-serif;
+	font-size: 8pt;
+}
+
+div.left {
+	width: 550px;
+}
+
+div.left_l {
+	float: left;
+    width: 47%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+div.left_r {
+	float: right;
+    width: 47%;
+    margin-left: 2%;
+    margin-top: 2%;
+	margin-right: 2%;
+}
+
+div.big_flower {
+	background: repeat-x;
+	background: url(picture/rottenbackground.png);
+	color: white;
+	height: 83px;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.big_flower img {
+	vertical-align: bottom;
+	height: 83px;
+}
+
+span.big {
+	font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    display: inline-table;
+}
+
+
+div.dis {
+	background-color: #E1D697;
+	border: 2px solid gray;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.dis img {
+	margin-right: 5px;
+	float: left;
+}
+
+.dis q {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+div.chess {
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+.chess img {
+	vertical-align: middle;
+	margin-right: 5px;
+	float: left;
+}
+
+span.writer {
+	font-family: sans-serif;
+	font-size: 8pt;
+}
+
+span.paper {
+	font-family: sans-serif;
+	font-style: italic;
+	font-size: 8pt;
+}
+
+div.w3c_logal {
+	margin: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+}
+
+p.bottom {
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+	text-align: center;
+	background-color: #A2B964;
+}
+
+
+body {
+	background-image: url('picture/background.png');
+    height: 50px;
+}
