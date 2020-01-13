@@ -1,0 +1,70 @@
+<!--
+    张楚明 18342125
+    Maze.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="Maze.css">
+    <title>Maze</title>
+</head>
+<body>
+    <div id = "maze">
+        <h1 id = "title">The Amazing Mouse Maze!</h1>
+        <p id = "rule">
+            Move your mouse over the "S" to begin.</br>
+        </p>
+        <div id = "result">
+            <p id = "win">
+                You Win</br>
+            </p>
+            <p id = "lose">
+                You Lose</br>
+            </p>
+            <p id = "cheat">
+                Don't cheat, you should start from the 'S' and move to the 'E' inside the maze!</br>
+            </p>
+        </div>
+        
+        
+
+        <div id = "main" onmouseleave = "Cheat()">
+            <div id = "walls">
+                <div id = "left" onmousemove = "Lose(left)"></div>
+                <div id = "top_left" onmousemove = "Lose(top_left)"></div>
+                <div id = "tops" onmousemove = "Lose(tops)"></div>
+                <div id = "top_right" onmousemove = "Lose(top_right)"></div>
+                <div id = "right" onmousemove = "Lose(right)"></div>
+                <div id = "middle" onmousemove = "Lose(middle)"></div>
+                <div id = "bottom_left" onmousemove = "Lose(bottom_left)"></div>
+                <div id = "bottom" onmousemove = "Lose(bottom)"></div>
+                <div id = "bottom_right" onmousemove = "Lose(bottom_right)"></div>
+            </div>
+
+            <div id = "point">
+                <div id = "S" onmousemove = "Start()">
+                    <p>S</p>
+                </div>
+
+                <div id = "E" onmousemove = "Win()">
+                    <p>E</p>
+                </div>
+            </div>
+        </div>
+
+        <div id = "end">
+            <p>
+                The object of this game is to guide the mouse cursor through the start area<br>
+                and get to the end area. Be sure to avoid the walls; 
+            </p>
+            <div id = "what"></div></br>
+            <p>Good luck!</p>
+        </div>  
+    </div>
+    <script src="Maze.js"></script>
+</body>
+</html>

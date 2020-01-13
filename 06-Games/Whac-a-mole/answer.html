@@ -1,0 +1,73 @@
+<!--
+    张楚明 18342125
+    Whac-a-mole.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="answer.css">
+    <title>Maze</title>
+</head>
+<body>
+
+    地鼠停留时间：<input id="tl" type="text" size="5" value="1" />秒<br />
+    地鼠出现间隔：<input id="jg" type="text" size="5" value="1" />秒<br />
+    游戏时长：<input id="sc" type="text" size="5px" value="1" />分钟<br />
+    游戏倒计时：<span id="djs"></span>秒<br />
+    游戏得分：<span id="defen"></span><br />
+
+    <button id="ksBtn">开始游戏</button>
+    <button id="ztBtn" >暂停游戏</button>
+    <button id="tzBtn">停止游戏</button>
+
+    <hr />
+    <!--游戏区域-->
+    <div id="game_div">
+        <div id="zt_div"></div>
+    <table border="1px">
+        <tr>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+            <td><img src="img/00.jpg" onclick="play(this)" /></td>
+        </tr>
+    </table>
+    </div>
+
+    <span id="str"></span>
+    <script src="answer.js"></script>
+</body>
+</html>

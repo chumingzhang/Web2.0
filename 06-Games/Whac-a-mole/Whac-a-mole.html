@@ -1,0 +1,119 @@
+<!--
+    张楚明 18342125
+    Whac-a-mole.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="Whac-a-mole.css">
+    <title>Whac-a-mole</title>
+</head>
+<body>
+    <div id = "Whac-a-mole">
+        <h1 id = "title">Whac-a-mole</h1>
+        <p id = "first">Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+
+        <div id = "main">
+            <div id = "show">
+                <div id = "one">
+                    <button id = "SE" type="button">Start Game | Stop Game</button>
+                </div>
+
+                <div id = "two">
+                    <span>Time: </span><input id = "djs" value = "30">
+                </div>
+
+                <div id = "three">
+                    <input id = "message">
+                </div>
+
+                <div id = "four">
+                    <span>Score: </span><input id = "point">
+                </div>
+            </div>
+
+            <div id = "map">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                </br>
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+                <input onclick = "check(this)" class = "get" id = "mouse" type = "radio">
+            </div>
+        </div>
+
+        <div id = "instructions">
+            <lu id = "instruction">Instructions :</br></br>
+                <li>&nbsp Click on the radio buttom(moles) as they are seproplected randomly by the computer.</li>
+                <li>&nbsp 1 point per hit, minus 1 point per miss.</li>
+            </lu>
+        </div>  
+    </div>
+    <script src="Whac-a-mole.js"></script>
+</body>
+</html>

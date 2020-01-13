@@ -1,0 +1,71 @@
+<!--
+    张楚明 18342125
+    Maze.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="Maze.css">
+    <title>Maze</title>
+</head>
+<body>
+    <div id = "maze">
+        <h1 id = "title">The Amazing Mouse Maze!</h1>
+        <p id = "rule">
+            Move your mouse over the "S" to begin.</br>
+        </p>
+        <div id = "result">
+            <p id = "win">
+                You Win</br>
+            </p>
+            <p id = "lose">
+                You Lose</br>
+            </p>
+            <p id = "cheat">
+                Don't cheat, you should start from the 'S' and move to the 'E' inside the maze!</br>
+            </p>
+        </div>
+        
+        
+
+        <div id = "main">
+            <div id = "walls">
+                <div id = "left"></div>
+                <div id = "top_left"></div>
+                <div id = "tops"></div>
+                <div id = "top_right"></div>
+                <div id = "right"></div>
+                <div id = "middle"></div>
+                <div id = "bottom_left"></div>
+                <div id = "bottom"></div>
+                <div id = "bottom_right"></div>
+            </div>
+
+            <div id = "point">
+                <div id = "S">
+                    <p>S</p>
+                </div>
+
+                <div id = "E">
+                    <p>E</p>
+                </div>
+            </div>
+        </div>
+
+        <div id = "end">
+            <p>
+                The object of this game is to guide the mouse cursor through the start area<br>
+                and get to the end area. Be sure to avoid the walls; 
+            </p>
+            <div id = "what"></div></br>
+            <p>Good luck!</p>
+        </div>  
+    </div>
+    <script src="Maze.js"></script>
+</body>
+</html>

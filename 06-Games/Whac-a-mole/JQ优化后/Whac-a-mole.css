@@ -1,0 +1,103 @@
+/*
+    张楚明 18342125
+    Whac-a-mole.css
+*/
+
+#title {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#first {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#main {
+    position: absolute;
+    left: 40%;
+    top: 16%;
+    width: 300px;
+    height: 360px;
+    /* border: 2px red solid; */
+}
+
+#show {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    /* border: 2px blue solid; */
+}
+
+#one {
+    position: absolute;
+    border:  1px gray solid;
+    border-radius: 5px;
+}
+
+button {
+    border: 0px;
+    background: transparent;
+    width: 160px;
+    border-radius: 5px;
+}
+
+#two{
+    position: absolute;
+    right: 0px;
+}
+
+input {
+    width: 30px;
+}
+
+#three {
+    position: absolute;
+    top: 30px;
+}
+
+#three input{
+    width: 120px;
+}
+
+#four {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+
+#map {
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    width: 280px;
+    height: 170px;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+#mouse {
+    width: 15px;
+    height: 15px;
+}
+
+#instructions {
+    position: absolute;
+    left: 28%;
+    top: 60%;
+}
+
+#instruction {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#instruction li {
+    margin-left: 20px;
+    list-style: decimal;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
