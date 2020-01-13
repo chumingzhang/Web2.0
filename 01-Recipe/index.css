@@ -1,0 +1,36 @@
+/*
+	姓名：张楚明   学号：18342125
+	Grandma's Lemon Meringue Pie网页的index.html的样式表
+*/
+
+h1.master {
+	font-family:sans-serif;
+	color:#000000;
+	background-color:#F0F0F0;
+	font-size:35pt;
+}
+
+h1.vise {
+	left:0px;
+	font-family:sans-serif;
+	color:#000000;
+	background-color:#F0F0F0;
+	font-size:25pt;
+}
+
+a:link {
+	color:#A4A400;
+}
+a:visited {
+	color:#A4A400;
+}
+a:hover {
+	color:#A4A400;
+}
+a:active {
+	color:#A4A400;
+}
+
+
+
+

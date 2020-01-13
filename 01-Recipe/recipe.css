@@ -1,0 +1,48 @@
+/*
+	姓名：张楚明   学号：18342125
+	Grandma's Lemon Meringue Pie网页的recipe.css的样式表
+*/
+
+ul.none {
+	list-style: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+	list-style-type:none;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:#404040;
+	background-color:#FFFFFF;
+	font-size:11pt;
+}
+	
+h1.master {
+	letter-spacing:0.2em;
+	font-family:sans-serif;
+	color:#A4A400;
+	background-color:#F0F0F0;
+	font-size:22pt;
+}
+
+h1.vise {
+	letter-spacing:0.2em;
+	left:0px;font-weight:400;
+	font-family:sans-serif;
+	color:#A4A400;
+	background-color:#F0F0F0;
+	font-size:18pt;
+}
+
+a:link {
+	color:#A4A400;
+}
+a:visited {
+	color:#A4A400;
+}
+a:hover {
+	color:#A4A400;
+}
+a:active {
+	color:#A4A400;
+}
+
+body {
+	background-image: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg');
+}
+	
