@@ -1,0 +1,26 @@
+//- 张楚明:18342125
+//- signin.jade
+
+extends layout
+
+block content
+	div(class = 'whole' id = 'signInWhole')
+		h1 登录
+		form(method = 'post')
+			if error
+				div(id = 'uniqueError').error.server!= error
+
+			div.username
+				input(id='username' name='username' class='allElement window' placeholder='Username')
+				label(id='usernameTag' for='username' class='allElement tag') 用户名
+				span(id='usernameError' class='validationError').error
+
+			div.password
+				input(id='password' name='password' class='allElement window' type='password' placeholder='Password')
+				label(id='passwordTag' for='password' class='allElement tag') 密码
+				span(id='passwordError' class='validationError').error
+
+			div.buttons
+				input.button.submit(id='submitBtn' type='submit' value='登录' class='allElement BTN signInBtns')
+				input.button.reset(id='resetBtn' type='reset' value='清空' class='allElement BTN signInBtns')
+				a(class='jump' id='injump' href='/regist') 注册

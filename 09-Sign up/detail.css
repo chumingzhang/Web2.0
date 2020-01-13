@@ -1,0 +1,30 @@
+/*
+	张楚明 18342125
+	detail.css
+*/
+
+html, body {
+	font-family: sans-serif;
+}
+.form_text_ipt {
+    line-height: 35px;
+    color: #888888;
+}
+#back{
+	width: 300px;
+	height: 35px;
+	line-height: 35px;
+	background: red;
+	margin: 10px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#back a:link, #back a:visited {
+	color: white;
+    display: block;
+    padding: 0 100px;
+    width: 100px;
+    height: 35px;
+}	

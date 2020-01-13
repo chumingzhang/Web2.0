@@ -1,0 +1,49 @@
+//- 张楚明:18342125
+//- signup.jade
+
+extends layout
+
+block content
+	div(class='whole' id='signUpWhole')
+		h1 注册
+		form(method='post')
+			if error
+				div(id='uniqueError').error.server!= error
+			div.username
+				input(id='username' name='username' value=user.username class='allElement window' placeholder='Username')
+				label(id='usernameTag' for='username' class='allElement tag') 用户名
+				span(id='usernameError' class='validationError').error
+
+			div.password
+				input(id='password' name='password' value=user.password class='allElement window' type='password' placeholder='Password')
+				label(id='passwordTag' for='password' class='allElement tag') 密码
+				span(id='passwordError' class='validationError').error
+
+			div.confirmPassword
+				input(id='confirmPassword' name='confirmPassword' value=user.confirmPassword class='allElement window' type='password' placeholder='Confirm Password')
+				label(id='confirmPasswordTag' for='confirmPassword' class='allElement tag') 确认密码
+				span(id='confirmPasswordError' class='validationError').error
+
+			div.sid
+				input(id='sid' name='sid' value=user.sid class='allElement window' placeholder='StudentID')
+				label(id='sidTag' for='sid' class='allElement tag') 学号
+				span(id='sidError' class='validationError').error
+					
+			div.phone
+				input(id='phone' name='phone' value=user.phone class='allElement window' placeholder='Phone')
+				label(id='phoneTag' for='phone' class='allElement tag') 电话
+				span(id='phoneError' class='validationError').error
+					
+			div.email
+				input(id='email' name='email' value=user.email class='allElement window' placeholder='Email')
+				label(id='emailTag' for='email' class='allElement tag') 邮箱
+				span(id='emailError' class='validationError').error
+					
+			div.buttons
+				input.button.submit(id='submitBtn' type='submit' value='提交' class='allElement BTN')
+				input.button.reset(id='resetBtn' type='reset' value='清空' class='allElement BTN')
+				a(class='jump' id='upjump' href='/signin') 登录
+
+	script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js')
+	script(type='text/javascript' src='/javascripts/validator.js')
+	script(type='text/javascript' src='/javascripts/signup.js')

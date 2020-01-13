@@ -1,0 +1,24 @@
+//- 张楚明:18342125
+//- detail.jade
+
+extends layout
+
+block content
+	div(class = "whole" id = "detailWhole")
+		h1 详情
+
+		p(id = "usernameDetailTag" class = "detailTag") 用户名
+		span(id = "usernameDetail" class = "detailContent") #{user.username}
+
+		p(id = "sidDetailTag" class = "detailTag") 学号
+		span(id = "sidDetail" class = "detailContent") #{user.sid}
+
+		p(id = "phoneDetailTag" class = "detailTag") 电话
+		span(id = "phoneDetail" class = "detailContent") #{user.phone}
+
+		p(id = "emailDetailTag" class = "detailTag") 邮箱
+		span(id = "emailDetail" class = "detailContent") #{user.email}
+
+		input(type = "button" id = "logout" value = "退出")
+	
+	script(type = "text/javascript" src = "/javascripts/detail.js")

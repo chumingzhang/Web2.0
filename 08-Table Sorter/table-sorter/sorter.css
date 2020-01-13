@@ -1,0 +1,46 @@
+/*
+    张楚明 18342125
+    Table Sorter.css
+*/
+
+#todo{
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px gray solid;
+    border-collapse: collapse;
+}
+
+#staff {
+    width: 400px; 
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px gray solid;
+    border-collapse: collapse;  
+}
+
+th {
+    padding: 5px;
+    border: 1px gray solid;
+    background-color: #191970;
+    color: white;
+}
+
+tr {
+    padding: 5px;
+    border: 1px gray solid;
+}
+
+td {
+    padding: 5px;
+    border: 1px gray solid;
+}
+
+.alternate {
+    background-color: #DCDCDC
+}
+
+.img {
+    float: right;
+}

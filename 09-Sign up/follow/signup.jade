@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        title 注册
+        link(rel = 'stylesheet' href = 'style.css')
+        script(type = 'text/javascript' src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js ")
+        script(type = 'text/javascript' src = "signup.js ")
+        script(type = 'text/javascript' src = "validator.js ")
+    body
+        h1 注册用户
+        form(method = 'post')
+        if error
+            div.error != error
+            div.username
+                label(for = 'username') 用户名
+                input(id = 'username' name = 'username' value = user.username)
+                span.error
+
+            div.sid
+                label(for = 'sid') 学  号
+                input(id = 'sid' name = 'sid' value = user.sid)
+                span.error
+
+            div.phoneemail
+                label(for = 'phone') 电  话
+                input(id = 'phone' name = 'phone' value = user.phone)
+                span.error
+
+            div.email
+                label(for = 'email') 邮  箱
+                input(id = 'email' name = 'email' value = user.email)
+                span.error
+
+            div.buttons
+                input.button.reset(type = 'reset' value = '清除')
+                input.button.submit(type = 'submit' value = '提交')
