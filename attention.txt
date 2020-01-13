@@ -1,0 +1,86 @@
+JS篇
+1. var x = "John";
+var y = new String("John");
+typeof x // 返回 String
+typeof y // 返回 Object 
+
+(x === y) // 结果为 false，因为 x 是字符串，y 是对象 
+
+2. 如果把数字与字符串相加，结果将成为字符串！
+
+3.JS的数据类型
+	5 种不同的数据类型：string  number  boolean  object  function
+	3种对象类型: Object  Date  Array  (typeof 都是 Object)
+	2 个不包含任何值的数据类型：null  undefine
+例如:
+typeof "John"                 // 返回 string 
+typeof 3.14                   // 返回 number
+typeof NaN                    // 返回 number
+typeof false                  // 返回 boolean
+typeof [1,2,3,4]              // 返回 object
+typeof {name:'John', age:34}  // 返回 object
+typeof new Date()             // 返回 object
+typeof function () {}         // 返回 function
+typeof myCar                  // 返回 undefined (如果 myCar 没有声明)
+typeof null                   // 返回 object 
+
+var person = null;           // 值为 null(空), 但类型为对象
+var person = undefined;     // 值为 undefined, 类型为 undefined
+
+4. == 和 === 的区别
+不同类型间比较，== 之比较 "转化成同一类型后的值" 看 "值" 是否相等，=== 如果类型不同，其结果就是不等。
+
+5. undefine 和 null 的区别(值相同类型不同)
+typeof undefined             // undefined
+typeof null                  // object
+null === undefined           // false
+null == undefined            // true
+
+6. constructor 属性返回所属 JavaScript 变量的构造函数。
+"John".constructor                 // 返回函数 String()  { [native code] }
+(3.14).constructor                 // 返回函数 Number()  { [native code] }
+false.constructor                  // 返回函数 Boolean() { [native code] }
+[1,2,3,4].constructor              // 返回函数 Array()   { [native code] }
+{name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
+new Date().constructor             // 返回函数 Date()    { [native code] }
+function () {}.constructor         // 返回函数 Function(){ [native code] } 
+
+你可以使用 constructor 属性来查看对象是否为数组 (包含字符串 "Array"):
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+} 
+
+7. 
+"5" + 1     // 返回 "51"      1 转换为 "1"  
+"5" - 1     // 返回 4         "5" 转换为 5
+
+8. 正则表达式  https://www.runoob.com/js/js-regexp.html
+var patt = /runoob/i
+
+/runoob/i  是一个正则表达式。
+runoob  是一个正则表达式主体 (用于检索)。
+i  是一个修饰符 (表示搜索不区分大小写)。
+
+正则表达式修饰符
+i 执行对大小写不敏感的匹配。
+g 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+m 执行多行匹配。
+
+9. 变量提升(Hoisting)--JS 的变量声明代码会自动在最开始被执行, 所以变量可以先使用再声明
+JS 的变量初始化不会提升
+
+10. "use strict"  https://www.runoob.com/js/js-strict.html
+
+11. 浮点数精度使用问题--https://www.runoob.com/w3cnote/js-precision-problem-and-solution.html
+var x = 0.1;
+var y = 0.2;
+var z = x + y            // z 的结果为 0.3
+if (z == 0.3)            // 返回 false
+
+12. 同一个数组里可以包含不同的数据类型
+var person = [];
+person[0] = "John";
+person[1] = 46;
+typeof person[0]  	//string
+typeof person[1]     //number
+

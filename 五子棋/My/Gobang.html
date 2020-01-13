@@ -1,0 +1,52 @@
+<!-- 
+    张楚明 18342125
+    Gobang.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="Gobang.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Gobang</title>
+</head>
+<body>
+    <button id="back">悔棋</button>
+    <button id="youfirst">新开一局</button>
+    <canvas id="background" width="535" height="535"></canvas>
+
+    <label for="com" class="radio" style="top: 55%">
+        <span class="radio-bg"></span>
+        <input type="radio" name="chos" id="com" value="com"> 电脑先手
+        <span class="radio-on"></span>
+    </label>
+
+    <label for="user" class="radio" style="top: 50%">
+        <span class="radio-bg"></span>
+        <input type="radio" name="chos" id="user" value="user" checked="checked"/> 玩家先手
+        <span class="radio-on"></span>
+    </label>
+
+    <div>
+        <img src="img/com.png" id="computer">
+        <img id="comchesspng">
+        <input id="comtime" class="mytime" type="text" value="00:00:00" readonly style="top: 36%">
+    </div>
+    
+    <div>
+        <img src="img/user.png" id="user">
+        <img id="usrchesspng" >
+        <input id="usrtime" class="mytime" type="text" value="00:00:00" readonly style="top: 77%">
+    </div>
+    
+    <script src="subworkers.js"></script>
+    <script src = "const.js"></script>
+    <script src = "initial.js"></script>
+    <script src="support.js"></script>
+    <script src="draw.js"></script>
+    <script src="Gobang.js"></script>
+</body>
+</html>

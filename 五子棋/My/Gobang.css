@@ -1,0 +1,143 @@
+/*
+    张楚明 18342125
+    Gobang.css
+*/
+
+body {
+    background-image: url("img/background.jpg");
+    min-width: 900px;
+}
+
+button {
+    width: 100px;
+    padding:8px;  
+    background-color: #808000;  
+    border-color: #357ebd;  
+    color: #fff;  
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;            /* future proofing */  
+    -khtml-border-radius: 10px;     /* for old Konqueror browsers */  
+    text-align: center;  
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:125%  
+}
+
+#background {
+    position : fixed;
+    z-index : 1;
+    left: 50%;
+    top: 15%;
+    background-image: url("img/board.jpg");
+    background-repeat:no-repeat;
+    background-size:100%,100%;
+}
+
+#back {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+}
+
+#youfirst {
+    position: fixed;
+    top: 40%;
+    left: 20%;
+}
+
+.radio {
+    display: inline-block;
+    position: fixed;
+    left: 20%;
+    line-height: 18px;
+    margin-right: 10px;
+    cursor: pointer;    /* 光标为手指 */
+}
+
+.radio input {
+    display: none;
+}
+
+.radio .radio-bg {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    padding: 0;
+    background-color: #45bcb8;
+    border-radius: 100%;
+    vertical-align: top;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1) inset, 0 1px 4px rgba(0, 0, 0, 0.1) inset, 1px -1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio .radio-on {
+    display: none;
+}
+
+.radio input:checked + span.radio-on {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    background: #FFFFFF;
+    top: 4px;
+    left: 4px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.4) inset;
+    background-image: linear-gradient(#ffffff 0, #e7e7e7 100%);
+    transform: scale(0, 0);
+    transition: all 0.2s ease;
+    transform: scale(1, 1);
+    display: inline-block;
+}
+
+#computer {
+    position: absolute;
+    right: 20.2%;
+    top: 18%;
+    height: 150px;
+    width: 150px;
+}
+
+#user {
+    position: absolute;
+    right: 20.5%;
+    top: 58%;
+    height: 150px;
+    width: 150px;
+}
+
+#comchesspng {
+    background: url("img/2.png");
+    background-size: 100% 100%;
+    position: fixed;
+    right: 15.5%;
+    top: 34%;
+    height:50px;
+    width:50px;
+    display: block;
+}
+
+#usrchesspng {
+    background: url("img/1.png");
+    background-size: 100% 100%;
+    position: fixed;
+    right: 15.5%;
+    top: 74%;
+    height:50px;
+    width:50px;
+    display: block;
+}
+
+.mytime {
+    background-color: transparent;
+    position: fixed;
+    right: 20%;
+    width: 150px;
+    height: 30px;
+    font-size: 35px;
+    text-align: center;
+}
